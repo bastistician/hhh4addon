@@ -86,12 +86,10 @@ and \eqn{u_q = u0_q / sum_{q = 1}^Q u0_q} for \eqn{q = 1, ..., Q}.
 The \code{par_lag} parameter corresponds to logit(\eqn{m}).}
 \item{A weighting only between first and second lags (in function \code{ar2lag}), i.e.
 \deqn{u_1 = \alpha, u_2 = 1 - \alpha.}
-The \code{par_lag} parameter corresponds to logit(\eqn{\alpha}).}}
+The \code{par_lag} parameter corresponds to logit(\eqn{\alpha}).}
 \item{Unrestricted lag can be fitted using \code{unrestricted_lag}. These are parameterized via
  a multinomial logit transformation where the first lag is the reference category.}
- \item{Discrete Weibull lags are implemented in \code{discrete_weibull_lag}, see details there.}
- \item{Discrete gamma lags are implemented in \code{discrete_gamma_lag}, see details there.}
- \item{Discretized log-normal lags are implemented in \code{log_normal_lag}, see details there.}
+\item{Discretized log-normal lags are implemented in \code{log_normal_lag}, see details there.}}
 Users can specify their own weighting functions as long as they take the arguments described above and return a vector of weights.
 }
 \examples{
