@@ -265,8 +265,8 @@ profile_par_lag <- function(stsObj, control,
     }
 
     # length 2:
-    if(isTRUE(all.equal(control$funct_lag, discrete_weibull_lag)) |
-       isTRUE(all.equal(control$funct_lag, discrete_gamma_lag)) |
+    if(# isTRUE(all.equal(control$funct_lag, discrete_weibull_lag)) |
+       # isTRUE(all.equal(control$funct_lag, discrete_gamma_lag)) |
        isTRUE(all.equal(control$funct_lag, log_normal_lag))){
       start_par_lag <- c(0.5, 0.5)
     }
