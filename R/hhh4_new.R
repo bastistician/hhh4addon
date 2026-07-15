@@ -318,7 +318,7 @@ profile_par_lag <- function(stsObj, control,
     }
 
     # extract the variances/sds of lag weighting parameters:
-    vars_par_lag <- diag(cov[inds_par_lag, inds_par_lag])
+    vars_par_lag <- diag(cov[inds_par_lag, inds_par_lag, drop = FALSE])
     vars_par_lag[vars_par_lag < 0]  <- NA # replace negative diagonal elements by NA.
     best_mod$se_par_lag <- sqrt(vars_par_lag)
     return(list(best_mod = best_mod, cov = cov))
